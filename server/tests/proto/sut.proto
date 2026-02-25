@@ -19,15 +19,21 @@ package bootz;
 // DHCP Service
 // The DHCP service is responsible for managing DHCP leases for the DUT and
 // responding to DHCP requests.
-service DHCPService {}
+service DHCPService {
+
+}
 
 // Image Service
 // The Image Service provides an interface to upload and download images.
-service ImageService {}
+service ImageService {
+
+}
 
 // BootzController Service
 // The BootzController service provides an interface to configure the responses
 // that will be returned by the Bootz SUT. Ideally, this RPC service is hosted
 // on the same SUT as the device-facing Bootz service but that is not a
 // requirement.
-service BootzController {}
+service BootzController {
+    
+}
