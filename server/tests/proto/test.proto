@@ -165,8 +165,6 @@ message InterfaceInfo {
 // Contains the expected state of the DUT after bootstrapping.
 message BootzState {
   // The expected last status of the SUT after Bootz. For positive test cases
-  // this should be "BOOTZ_OK". See
-  // https://github.com/openconfig/public/blob/master/release/models/system/openconfig-system-bootz.yang
-  // for possible values.
+  // this should be "BOOTZ_OK".
   string status = 1;
 }
