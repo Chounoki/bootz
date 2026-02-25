@@ -102,7 +102,7 @@ message BootstrapData {
 // Contains information about the security artifacts that the Bootz SUT should
 // use during bootstrapping. If not provided in this message, the Bootz SUT
 // must attempt to fetch them from another source (e.g. a secure database). It
-// is the responsibilty of the test runner to ensure these artifacts are
+// is the responsibility of the test runner to ensure these artifacts are
 // stored and handled securely.
 message SecurityArtifacts {
   // A mapping of control card serial number to Ownership Voucher that the Bootz
