@@ -129,6 +129,12 @@ message SecurityArtifacts {
   // The corresponding private key for the above OC certificate.
   // The format of this field is a PEM-encoded private key.
   string oc_private_key = 5;
+
+  // A certificate that corresponds to the CA that signed the DUT's
+  // IDevID certificate. This field should contain the CA that directly signed
+  // the DUT's IDevID and not necessarily the Root CA. The format of this
+  // field is a PEM-encoded x509 certificate.
+  string idevid_ca = 6;
 }
 
 // Contains information about the DUT's interfaces for use during DHCP and
